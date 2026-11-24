@@ -32,6 +32,15 @@ data, profile, friends or messages. The Page access token is stored only on the 
 computer and is not shared with any third party. Access can be removed as described in the
 <a href="deletion.html">data deletion instructions</a>.</p>
 
+<h2>TikTok</h2>
+<p>The application also uses TikTok Login Kit and the Content Posting API to upload short videos
+to TikTok accounts that are controlled by the owner of the application, and to read the basic
+profile of those accounts. It requests the scopes <code>user.info.basic</code>,
+<code>video.upload</code> and <code>video.publish</code>. It does not access any other TikTok
+user's data, videos, followers or messages. The access token is stored only on the owner's own
+computer and is not shared with any third party. Access can be removed as described in the
+<a href="deletion.html">data deletion instructions</a>.</p>
+
 <h2>How data is stored</h2>
 <p>The OAuth refresh token issued by Google is stored only on the owner's own computer, in a
 local file outside of any public repository. It is not transmitted to any third party and is
@@ -59,6 +68,7 @@ Používá pouze oprávnění <code>youtube.upload</code> k nahrávání videí 
 Přes Facebook Login publikuje Reely na Facebookové Stránky vlastníka a čte jejich statistiky
 (<code>pages_show_list</code>, <code>pages_read_engagement</code>, <code>pages_manage_posts</code>,
 <code>read_insights</code>); údaje jiných uživatelů Facebooku nečte.
+Přes TikTok Login Kit a Content Posting API nahrává videa na TikTokové účty vlastníka a čte jejich základní profil (<code>user.info.basic</code>, <code>video.upload</code>, <code>video.publish</code>); údaje jiných uživatelů TikToku nečte.
 Smazání: <a href="deletion.html">pokyny</a>.
 Žádné jiné údaje uživatelů Googlu nečte, neshromažďuje ani nesdílí. Autorizační token je uložen jen
 na počítači vlastníka. Přístup lze kdykoli odvolat na
